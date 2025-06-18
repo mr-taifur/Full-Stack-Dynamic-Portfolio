@@ -58,7 +58,7 @@
         <div class="disp-flex flex-justify-space">
             <div>
                 <h3>
-                    <img src="{{ asset('assets/images/taifur.png') }}" alt="logo">
+                    <img id = "avatar" src="{{ asset('assets/images/taifur.png') }}" alt="logo">
                     Taifur
                 </h3>
             </div>

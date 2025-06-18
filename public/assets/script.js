@@ -14,13 +14,12 @@ document.querySelectorAll(".title").forEach((abc) => {
             <a href="#"> This is by js</a>
             <p> this is assisgned dynamically</p>
         <\h3>
-        this.style.color = "yellow";
-        this.style.backgroundColor = "#000000";
-        this.style.borderRadius = "10px";
-        this.style.padding = "20px";
-
         `;
-        
+        this.classList.add("card");
+
+        avatar = document.getElementById("avatar");
+        avatar.src = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.thebullvine.com%2Fmanagement%2Fai-changes-from-artificial-insemination-to-artificial-intelligence-on-the-dairy-farm%2F&psig=AOvVaw3WIuT5dzTv3Pq3d_bf2mRx&ust=1750314416015000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMi1hLqr-o0DFQAAAAAdAAAAABAE"
+        avatar.classList.add("card");
     };
 });
 
