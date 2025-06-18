@@ -81,8 +81,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Load JS from public/js/script.js -->
     <script src="{{ asset('js/script.js') }}"></script>
 </body>
 
