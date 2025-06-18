@@ -10,7 +10,7 @@
         body {
             padding: 0;
             margin: 0;
-            background-image: url('assets/images/bg.jpg');
+            background-image: url('{{ asset('assets/images/bg.jpg') }}');
             background-size: cover;
             background-position: center center;
             background-attachment: fixed;
@@ -36,8 +36,6 @@
             text-decoration: none;
         }
 
-        .no-decor:hover {}
-
         img {
             width: 50px;
             height: auto;
@@ -60,8 +58,7 @@
         <div class="disp-flex flex-justify-space">
             <div>
                 <h3>
-
-                    <img src="{{ 'assets/images/taifur.png' }}" alt="">
+                    <img src="{{ asset('assets/images/taifur.png') }}" alt="logo">
                     Taifur
                 </h3>
             </div>
@@ -79,21 +76,14 @@
     <section>
         <div class="disp-flex flex-justify-space">
             <div>
-                About
-            </div>
-        </div>
-        <div class="disp-flex flex-justify-space">
-            <div>
-                More About
-            </div>
-            <div>
                 <h1 class="title">My Projects</h1>
-                <p id="test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, velit.</p>
+                <p id="test">hello im taifur</p>
             </div>
         </div>
     </section>
-    <script src="{{ asset('js/script.js') }}"></script>
 
+    <!-- Load JS from public/js/script.js -->
+    <script src="{{ asset('js/script.js') }}"></script>
 </body>
 
 </html>
