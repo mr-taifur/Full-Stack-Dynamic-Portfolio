@@ -1,8 +1,13 @@
-@extends('index')
-@push('style')
-    <title>Taifurs Portfolio</title>  
-@endpush
-@Section('main-content')
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Taifur Rahman | Portfolio</title>
+  <link rel="stylesheet" href="{{ asset('css/home.css') }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
    <!-- Navigation Bar -->
   <nav class="navbar">
     <div class="logo-section">
@@ -10,7 +15,6 @@
       <span class="name">Taifur Rahman</span>
     </div>
   <ul class="nav-links">
-  <li><a href="#home">Home</a></li>
   <li><a href="#about">About</a></li>
   <li><a href="#research">Research</a></li>
   <li><a href="#blog">Blog</a></li>
@@ -22,7 +26,7 @@
   </nav>
 
      <!-- Hero Section  -->
-  <section id="home" class="hero">
+  <section class="hero">
     <div class="hero-text">
       <h1>Welcome to My Portfolio</h1>
       <p>I'm <strong>Taifur Rahman</strong>, a passionate learner and researcher exploring tech, AI, and innovation.</p>
@@ -101,7 +105,7 @@
 <!-- Contact Section -->
 <section id="contact" class="contact">
   <div class="contact-container">
-    <h2>Let's Connect for Collaboration</h2>
+    <h2>Contact Me</h2>
     <form id="contactForm" class="contact-form" onsubmit="return validateForm()">
       <div class="form-group">
         <input type="text" id="name" name="name" placeholder="Your Name" required>
@@ -115,22 +119,20 @@
   </div>
 </section>
 
- <!-- Footer Section -->
+
+
+     <!-- Footer Section -->
   <footer class="footer">
-  <div class="footer-content">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFJtGSYbETjjT-mckVeSMSQ6izsfNMQ6pE1w&s" 
-         alt="Signature" 
-         class="footer-signature"/>
-
-    <p>&copy; {{ date('Y') }} Taifur Rahman. All rights reserved.</p>
-
-    <div class="footer-links">
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-      <a href="https://www.linkedin.com/in/taifur-rahman-840b492b0/" target="_blank">LinkedIn</a>
+    <div class="footer-content">
+      <p>&copy; {{ date('Y') }} Taifur Rahman. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="https://www.linkedin.com/in/taifur-rahman-840b492b0/" target="_blank">LinkedIn</a>
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
 <script src="{{ asset('js/contact.js') }}"></script>
-@endsection
+</body>
+</html>
