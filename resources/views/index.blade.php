@@ -43,9 +43,12 @@ body {
 
 .logo {
   height: 50px;
-  margin-right: 12px;
+  width: 50px;
   border-radius: 50%;
+  object-fit: cover;
+  margin-right: 12px;
 }
+
 
 .name {
   font-size: 1.4rem;

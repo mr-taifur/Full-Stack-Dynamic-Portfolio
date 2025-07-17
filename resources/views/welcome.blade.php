@@ -1,6 +1,7 @@
 @extends('index')
 @push('style')
     <title>Taifurs Portfolio</title>  
+    <link rel="stylesheet" href="{{ asset('css/home.css') }}">
 @endpush
 @Section('main-content')
    <!-- Navigation Bar -->
@@ -9,10 +10,11 @@
       <img src="{{ asset('assets/images/t.jpg') }}" alt="Logo" class="logo">
       <span class="name">Taifur Rahman</span>
     </div>
-  <ul class="nav-links">
+ <ul class="nav-links">
   <li><a href="#home">Home</a></li>
   <li><a href="#about">About</a></li>
   <li><a href="#research">Research</a></li>
+  <li><a href="#projects">MyProjects</a></li>
   <li><a href="#blog">Blog</a></li>
   <li><a href="https://www.linkedin.com/in/taifur-rahman-840b492b0/" target="_blank">LinkedIn</a></li>
   <li><a href="https://drive.google.com/file/d/1rgrdP_6bMuFMyQrRuugQ2wTGXIsKl5t0/view?usp=sharing" target="_blank">Resume</a></li>
@@ -51,27 +53,60 @@
   </div>
 </section>
 <!-- Research Section -->
-<section id="research" class="research">
+<section id="research" class="project-section">
   <h2 class="section-title">My Research</h2>
-  <div class="research-container">
+  <div class="project-container">
 
-    <div class="research-item">
+    <div class="project-card">
       <img src="https://cdn.prod.website-files.com/6077b42e4e8d6b13a8ea682a/640eb1bd2e494865ac01beb0_AI%20in%20Ag.jpg" alt="Research 1">
-      <div class="overlay">AI in Agriculture</div>
+      <h3>AI in Agriculture</h3>
+      <p>Applied AI models to monitor crop health, optimize yield, and assist in precision farming techniques.</p>
     </div>
 
-    <div class="research-item">
+    <div class="project-card">
       <img src="https://play-lh.googleusercontent.com/FvsmsXjwxPTe0e5Z4zh8WVb-RT_ZC5hFooEyLApIipWUtmGfktrJzl1p5RJa0-A7WOo1" alt="Research 2">
-      <div class="overlay">Medicinal Plant Identification</div>
+      <h3>Medicinal Plant Identification</h3>
+      <p>Deep learning models  to classify and detect medicinal plant leaves.</p>
     </div>
 
-    <div class="research-item">
+    <div class="project-card">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRb7fADS2dFdxwuAwldhDV0yeP2QkSINSKrIw&s" alt="Research 3">
-      <div class="overlay">Bangladesh Traffic System AI</div>
+      <h3>Bangladesh Traffic System AI</h3>
+      <p>Smart AI solutions for predicting and managing traffic flow </p>
     </div>
 
   </div>
 </section>
+
+
+
+<!-- My Projects Section -->
+<section id="projects" class="project-section">
+  <h2 class="section-title">My Projects</h2>
+  <div class="project-container">
+
+    <div class="project-card">
+      <img src="https://static.vecteezy.com/system/resources/previews/022/223/650/non_2x/smart-ai-chat-bot-communicate-with-human-vector.jpg" alt="Project 1">
+      <h3>AI Chatbot</h3>
+      <p>Developed a smart chatbot using Python and OpenAI's API to assist users in real time.</p>
+    </div>
+
+    <div class="project-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThxKA7HvO10GTQBbTTroY57QxgaI-W6kfyUw&s" alt="Project 2">
+      <h3>Weather App</h3>
+      <p>A real-time weather forecasting web app using HTML, CSS, JS, and OpenWeather API.</p>
+    </div>
+
+    <div class="project-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH73xvHGihq0ZU_7-gCt6XgdAUlakKVu3pxA&s" alt="Project 3">
+      <h3>Traditional Food Website</h3>
+      <p>This Is Bangladeshi All Traditional Food Dynamic Website</p>
+    </div>
+
+  </div>
+</section>
+
+
 <!-- blog -->
  <section id="blog" class="blog-section">
   <h2>Latest Blog Posts</h2>

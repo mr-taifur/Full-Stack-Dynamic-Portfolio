@@ -17,9 +17,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/lp1', function () {
-    return view('lp1');
-});
+// Route::get('/lp1', function () {
+//     return view('lp1');
+// });
 
 // Route::get('/home', function () {
 //     return view('home');
