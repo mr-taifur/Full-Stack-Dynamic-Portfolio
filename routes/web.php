@@ -2,32 +2,30 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthenticationController;
+use App\Http\Controllers\Controller;
+use App\Http\Controllers\DashboardController;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
+
 // login_routes
 Route::get('/login', function () {
     return view('auth.login');
 });
-Route::post('/login', [AuthenticationController::class,'login'])->name('login'); 
+Route::post('/login', [AuthenticationController::class, 'login'])->name('login');
 
 // register_routes
 Route::get('/register', function () {
     return view('auth.register');
 });
-Route::post('/register', [AuthenticationController::class,'register'])->name('register'); 
+Route::post('/register', [AuthenticationController::class, 'register'])->name('register');
 
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+// Admin Routes
+Route::middleware(['auth'])->group(function () {
+    Route::get('/admin/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 });
 
 // Route::get('/lp1', function () {
@@ -37,5 +35,3 @@ Route::get('/', function () {
 // Route::get('/home', function () {
 //     return view('home');
 // });
-
-
