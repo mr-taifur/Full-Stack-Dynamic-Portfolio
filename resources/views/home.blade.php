@@ -1,42 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Taifur Rahman | Portfolio</title>
-  <link rel="stylesheet" href="{{ asset('css/home.css') }}">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
 
-   <!-- Navigation Bar -->
-  <nav class="navbar">
-    <div class="logo-section">
-      <img src="{{ asset('assets/images/t.jpg') }}" alt="Logo" class="logo">
-      <span class="name">Taifur Rahman</span>
-    </div>
-  <ul class="nav-links">
-  <li><a href="#about">About</a></li>
-  <li><a href="#research">Research</a></li>
-  <li><a href="#blog">Blog</a></li>
-  <li><a href="https://www.linkedin.com/in/taifur-rahman-840b492b0/" target="_blank">LinkedIn</a></li>
-  <li><a href="https://drive.google.com/file/d/1rgrdP_6bMuFMyQrRuugQ2wTGXIsKl5t0/view?usp=sharing" target="_blank">Resume</a></li>
-  <li><a href="#contact">Contact</a></li>
-</ul>
-
-  </nav>
-
-     <!-- Hero Section  -->
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Welcome to My Portfolio</h1>
-      <p>I'm <strong>Taifur Rahman</strong>, a passionate learner and researcher exploring tech, AI, and innovation.</p>
-    </div>
-    <div class="hero-img">
-      <img src="{{ asset('assets/images/t.jpg') }}" alt="Taifur Rahman">
-    </div>
-  </section>
-
-  {{-- About Section --}}
 <section id="about" class="about">
   <div class="about-container">
     
@@ -135,4 +97,4 @@
   </footer>
 <script src="{{ asset('js/contact.js') }}"></script>
 </body>
-</html>
+</html> --}}

@@ -271,16 +271,16 @@ body {
     align-self: center;
   }
 }
-/* Research Section */
-.research {
+/* My Research Section */
+ .research-section {
   padding: 60px 30px;
-  background-color: #caecf1;
+  background-color: #e6f7ff; 
   text-align: center;
   max-width: 1200px;
   margin: 0 auto 60px auto;
 }
 
-.section-title {
+.research-section .section-title {
   font-size: 2.5rem;
   margin-bottom: 40px;
   color: #222;
@@ -294,10 +294,10 @@ body {
   gap: 40px;
 }
 
-.research-item {
+.research-card {
   position: relative;
-  width: 250px;      
-  height: 320px;  
+  width: 250px;
+  height: 320px;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
@@ -309,9 +309,9 @@ body {
   align-items: center;
 }
 
-.research-item img {
+.research-card img {
   width: 100%;
-  height: 220px; 
+  height: 220px;
   object-fit: cover;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
@@ -319,16 +319,16 @@ body {
   display: block;
 }
 
-.research-item:hover {
+.research-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 12px 35px rgba(0, 188, 212, 0.4);
 }
 
-.research-item:hover img {
+.research-card:hover img {
   transform: scale(1.05);
 }
 
-.overlay {
+.research-card .overlay {
   position: absolute;
   bottom: 0;
   background: rgba(0, 188, 212, 0.85);
@@ -344,17 +344,17 @@ body {
   font-size: 1.1rem;
 }
 
-.research-item:hover .overlay {
+.research-card:hover .overlay {
   opacity: 1;
 }
 
 @media (max-width: 1024px) {
-  .research-item {
+  .research-card {
     width: 45%;
     height: auto;
   }
 
-  .research-item img {
+  .research-card img {
     height: 200px;
   }
 }
@@ -364,16 +364,15 @@ body {
     gap: 25px;
   }
 
-  .research-item {
+  .research-card {
     width: 90%;
     height: auto;
   }
 
-  .research-item img {
+  .research-card img {
     height: 180px;
   }
 }
-
 /* contact */
 .contact {
   padding: 60px 20px;
@@ -673,7 +672,7 @@ body {
 
 </head>
 <body>
-      @yield('main-content');
+      @yield('main-content')
       <script src="{{ asset('js/contact.js') }}"></script>
 </body>
 </html>
