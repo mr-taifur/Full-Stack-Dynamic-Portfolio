@@ -8,37 +8,28 @@ use Illuminate\Support\Facades\Auth;
 
 class AuthenticationController extends Controller
 {
+    // Login
     public function login(Request $request)
     {
-        $credentials = $request->validate([
-            'email' => "required|email",
-            'password' => "required",
-        ]);
+        $email = $request->email;
+        $password = $request->password;
 
-        
-if (Auth::attempt($credentials)) {
-    $request->session()->regenerate();
-    return redirect()->intended('/admin/dashboard');
-}
+        if (Auth::attempt(['email' => $email, 'password' => $password])) {
+            $request->session()->regenerate();
+            return redirect('/admin/dashboard');
+        }
 
-        return back()->withErrors([
-            'email' => 'The provided credentials do not match our records.',
-        ])->onlyInput('email');
+        return back()->with('error', 'Invalid credentials');
     }
 
+    // Register
     public function register(Request $request)
     {
-        $credentials = $request->validate([
-            'name' => "required|string|max:255",
-            'email' => "required|email|unique:users,email",
-            'password' => "required|min:6|confirmed",  // Add password confirmation if you want
-            // 'phone' => "required|string|max:15",  // Add if you want phone
-        ]);
-
         $user = User::create([
             "name" => $request->name,
             "email" => $request->email,
             "password" => bcrypt($request->password),
+            "role" => "admin", // Optional: make new users admin by default
         ]);
 
         return redirect('/login')->with('success', 'Registration successful! Please login.');
