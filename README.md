@@ -64,3 +64,10 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Srenshoots
+![alt text](<Screenshot 2025-08-24 091718.png>) ![alt text](<Screenshot 2025-08-24 091705.png>) ![alt text](<Screenshot 2025-08-24 091638.png>) ![alt text](<Screenshot 2025-08-24 091505.png>)
+![alt text](<Screenshot 2025-08-24 120352.png>) ![alt text](<Screenshot 2025-08-24 120034.png>) ![alt text](<Screenshot 2025-08-24 115824.png>)
+
+## Lab Report
+[text](<c:/Users/DCL/Downloads/Lab Report WebDesign(221-15-5750).pdf>)
